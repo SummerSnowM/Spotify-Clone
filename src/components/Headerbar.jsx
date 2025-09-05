@@ -15,11 +15,12 @@ const Headerbar = () => {
 
   const toggleBrowseActive = () => {
     setIsBrowseActive(!isBrowseActive);
-  
+  }
+
 
   const toggleNewsActive = () => {
     setIsNewsActive(!isNewsActive);
-  
+  }
 
   return (
     <div className="w-full pt-2 px-2 flex items-center justify-between">
@@ -36,9 +37,8 @@ const Headerbar = () => {
             <img
               src={isHomeActive ? assets.home_icon_white : assets.home_icon}
               alt=""
-              className={`w-7 h-7 ${
-                isHomeActive ? "opacity-100" : "opacity-50"
-              }`}
+              className={`w-7 h-7 ${isHomeActive ? "opacity-100" : "opacity-50"
+                }`}
             />
           </div>
         </button>
@@ -51,9 +51,8 @@ const Headerbar = () => {
           <img
             src={assets.search_icon}
             alt=""
-            className={`w-6 h-6 absolute left-3 pointer-events-none ${
-              isSearchFocused || isSearchHovered ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-6 h-6 absolute left-3 pointer-events-none ${isSearchFocused || isSearchHovered ? "opacity-100" : "opacity-50"
+              }`}
           />
           <input
             className="pl-12 pr-3 py-2 border-0 cursor-pointer focus:outline-none focus:ring-2 focus:ring-white rounded-full bg-[#1F1F1F] text-white placeholder-gray-400 w-[70vw] md:w-[40vw] lg:w-[30vw] h-10 md:h-12 transition-all duration-100 hover:bg-[#282827]"
@@ -74,9 +73,8 @@ const Headerbar = () => {
                 isBrowseActive ? assets.browse_icon_white : assets.browse_icon
               }
               alt=""
-              className={`w-6 h-6 ${
-                isBrowseActive || isBrowseHovered ? "opacity-100" : "opacity-50"
-              }`}
+              className={`w-6 h-6 ${isBrowseActive || isBrowseHovered ? "opacity-100" : "opacity-50"
+                }`}
             />
           </button>
         </div>
@@ -101,9 +99,8 @@ const Headerbar = () => {
           <img
             src={isNewsActive ? assets.bell_icon_white : assets.bell_icon}
             alt=""
-            className={`w-5 h-5 ${
-              isNewsActive || isNewsHovered ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-5 h-5 ${isNewsActive || isNewsHovered ? "opacity-100" : "opacity-50"
+              }`}
           />
         </button>
         <div className="ml-5 bg-[#1F1F1F] rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 hover:scale-110">
